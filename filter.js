@@ -72,7 +72,7 @@ function filter(parentBranch, search) {
 	if (parentBranch.branches.length > 0) {
 		parentBranch.branches = parentBranch.branches.filter(childBranch => filter(childBranch, search))
 
-		if (filterCallback(parentBranch, search) || parentBranch.branches.length > 0)
+		if (parentBranch.branches.length > 0)
 			return parentBranch;
 
 		return false;

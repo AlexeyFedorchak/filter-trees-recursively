@@ -45,7 +45,6 @@ func filter(parentBranch Branch, search []string) (bool, Branch) {
 }
 
 func main() {
-
 	//init tree and create json in string
 	var rootBranch Branch
 	branchesJson := `{"name":"Root","branches":[{"name":"Root Branch 1","branches":[{"name":"Branch 2","branches":[]},{"name":"Branch 3","branches":[{"name":"Branch 4","branches":[]},{"name":"Branch 5","branches":[]}]}]},{"name":"Root Branch 2","branches":[{"name":"Branch 1","branches":[{"name":"Branch 2","branches":[{"name":"Special Branch","branches":[]}]},{"name":"One more specific branch","branches":[]}]}]}]}`
